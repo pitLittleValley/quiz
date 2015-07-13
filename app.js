@@ -29,7 +29,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 //instalar los enrutadores
 //asociar rutas a sus gestores
 app.use('/', routes);
-app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

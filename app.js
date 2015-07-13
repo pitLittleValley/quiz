@@ -1,4 +1,10 @@
-//url video https://youtu.be/4Rcgd08QQJs
+//Quiz 2 url video https://youtu.be/4Rcgd08QQJs
+//Quiz3 https://youtu.be/DnylqFbaS1g
+//Quiz4 https://youtu.be/oSTXsqSoLTc
+//Quiz6 https://youtu.be/pHrxmgE1-eM
+//Quiz7 https://youtu.be/l5nviUiDRDI
+
+
 //importar paquetes con middlewares
 var express = require('express');
 var path = require('path');
@@ -6,6 +12,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var partials = require('express-partials');
 
 //importar enrutadores
 var routes = require('./routes/index');
@@ -17,6 +24,8 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
+app.use(partiasl());
 
 // uncomment after placing your favicon in /public
 app.use(favicon(__dirname + '/public/favicon.ico'));
